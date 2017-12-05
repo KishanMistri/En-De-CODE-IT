@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+
+  "name": "EN/DE-code IT",
+  "description": "This extension will encode given string to encryted text and also can decode that string",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon-64.png",
+    "default_popup": "popup.html"
+  },
+  "icons":{
+  "64": "icon-64.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*","https://*/*"],
+      "css": ["CSS.css"],
+	  "javascript" : ["aes.js"]
+    }
+  ],
+  "permissions": [
+    "storage"
+  ]
+}

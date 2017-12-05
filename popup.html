@@ -1,0 +1,137 @@
+<!doctype html>
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html".
+ -->
+<html>
+  <head>
+    <title>Getting Started Extension's Popup</title>
+    <style type="text/css">
+      body {
+		color: white;
+        margin: 10px;
+        white-space: nowrap;
+		height: 420px;
+		width:315px;
+		border-radius: 30px;
+		background: #2C3C4E;
+      }
+
+      h1 {
+		font-family: Rockwell;
+		text-align:center;
+      }
+	  
+	  h3,h4{
+		font-family: Rockwell;
+		margin-left:13px;
+		margin-right:20px;
+	  }
+
+      #container {
+		height: 240px;
+		width:300px;
+		border: 1px solid black;
+        align-items: center;
+        justify-content: space-between;
+		border-radius:20px;
+      }
+	  
+	  submit{
+		width:100px;
+		height:100px;
+		background-color: #F7EAC8;
+		color:white;
+	  }
+	  
+	  #button_div{
+		display:inline-block;
+		align:center;
+	  }
+	  
+	  label{
+		margin-top: 10px;
+	  }
+	  
+	  input{
+		margin-left:15px;
+		margin-right:20px;
+		width:260px;
+		height:40px
+		radius: 10px;
+		padding: 5px;
+		border-radius:3px;
+	  }
+	  
+	  .Primary{
+		border: none;
+		margin-top:10px;
+		margin-left:40px;
+		background-color:#E96F7D;
+		border-radius:5px;
+		color: black;
+		font-weight:900 ;
+		height:40px;
+		width:90px;
+	  }
+	  
+	  .Primary:hover{
+		background-color:#e0384c;
+		transition: 0.3;
+	  }
+	  
+	  #IutputSpace{
+		border: 2px solid green;
+		border-radius: 10px;
+		margin-top:10px;
+		width:300px;
+		height:100px;
+		color:black;
+		text-align:center;
+		background-color:#1AB696;
+		margin-bottom:5px;
+	  }
+	  
+	  img{
+		margin-top:0px;
+		margin-bottom:0px;
+		width:80px;
+		height:80px;
+		
+	  }
+	  
+	  #output{
+	  margin: 10px;
+	  }
+    </style>
+	<script src="jquery-3.1.0.min.js"></script>
+	<script src="popup.js"></script>
+	<script src="aes.js"></script>
+  </head>
+
+  <body>
+    <h2><center><img src="icon-64.png" alt="EN/DE code IT"></center></h2>
+    <div id="container">
+		<h3>Text to encrypt:</h3>
+		<input type="text" id="MsgInput" placeholder="Message to encrypt"/>
+		
+		<h3>Text to decrypt:</h3>
+		<input type="text" id="EncInput" placeholder="Encrypted message to decrypt"/>
+		
+		<h3>Key:</h3>
+		<input type="text" id="Key" placeholder="Key to encrypt/decrypt"/>
+		
+	</div>
+	
+	<div id="button_div">
+		<input type="submit" id="en" value="Encrypt" class="Primary"/>
+		<input type="submit" id="de" value="Decrypt" class="Primary"/>
+	<div>
+	
+	<div id="IutputSpace">
+		<label><center><h4>Your output will be here</h4></center></label>
+		<p id="output"></p>
+	</div>	
+  </body>
+</html>
