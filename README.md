@@ -1,4 +1,5 @@
-# ChromeSecurityExtension
-Encryption Extension using AES
+# "En/De-CODE IT"    [ChromeSecurityExtension]
 
-Chrome extension which can be used to stop social engineering attack & store data like email in encrypted form.
+***Encryption Extension using AES Algorithm***
+
+- Chrome extension which can be used to stop social engineering attack & store data like email in encrypted form.
