@@ -14,9 +14,10 @@
   },
   "content_scripts": [
     {
-      "matches": ["http://*/*","https://*/*"],
-      "css": ["CSS.css"],
-	  "javascript" : ["aes.js"]
+      "matches": 
+	    ["http://*/*","https://*/*"],
+	     "javascript" : ["aes.js"]
+      //     "css": ["CSS.css"]
     }
   ],
   "permissions": [
