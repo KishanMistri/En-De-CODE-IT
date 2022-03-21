@@ -16,8 +16,8 @@
     {
       "matches": 
 	    ["http://*/*","https://*/*"],
-	     "javascript" : ["aes.js"]
-      //     "css": ["CSS.css"]
+	     "javascript" : ["aes.js"],
+             "css": ["CSS.css"]
     }
   ],
   "permissions": [
