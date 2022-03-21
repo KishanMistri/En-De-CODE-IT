@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "EN/DE-code IT",
-  "description": "This extension will encode given string to encryted text and also can decode that string",
+  "description": "Generate Strong password and save them. Faster way to encrypt and decrypt the secrets using AES256.",
   "version": "1.0",
   "action": {
     "default_icon": "./icons/icon-en-de_code_it.png",
