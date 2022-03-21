@@ -6,11 +6,11 @@
   "version": "1.0",
 
   "browser_action": {
-    "default_icon": "icon-64.png",
+    "default_icon": "icon-en-de_code_it.png",
     "default_popup": "popup.html"
   },
   "icons":{
-  "64": "icon-64.png"
+  "64": "icon-en-de_code_it.png"
   },
   "content_scripts": [
     {
